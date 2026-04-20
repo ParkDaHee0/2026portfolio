@@ -60,7 +60,7 @@ body {
   position: fixed;
   top: 5px;
   left: 215px;
-  transform: scale(0.27);
+  transform: scale(0.225);
   transform-origin: left center;
 }
 
@@ -938,36 +938,38 @@ body.scrolled #logo .title {
   color: #fff;
 }
 
+
 #etc ul li>figure img {
   width: 100%;
   border-radius: 2rem;
   display: block;
 }
 
+#etc ul li .txt figure {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+#etc ul li .txt h3 {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 /* 플러스 버튼 */
 .etc-more {
   display: flex;
+  gap: 2rem;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .etc-more a {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1.5px solid #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  display: block;
+  font-family: 'ProstoOne', serif;
+  font-size: 2rem;
   color: #111;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.etc-more a:hover {
-  background: #111;
-  color: #fff;
 }
 
 /*location*/

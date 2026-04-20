@@ -1,0 +1,504 @@
+/* ============================================================
+   RESPONSIVE.CSS — 포트폴리오 반응형
+   모든 디바이스 대응: PC(1280+) / 태블릿(768~1279) / 모바일(~767)
+   ============================================================ */
+
+/* ── 태블릿 (768px ~ 1279px) ─────────────────────────────── */
+@media (max-width: 1279px) {
+
+  /* ---- 공통 ---- */
+  .conwrap {
+    margin: 10rem 6rem;
+  }
+
+  /* ---- intro ---- */
+  #logo .title {
+    font-size: 6rem;
+  }
+
+  #toggle {
+    width: 100px;
+    height: 54px;
+  }
+
+  #toggle .circle {
+    width: 44px;
+    height: 44px;
+  }
+
+  #toggle.on .circle {
+    transform: translateX(46px);
+  }
+
+  /* ---- header ---- */
+  .header {
+    left: 80px;
+    right: 80px;
+    top: 30px;
+  }
+
+  .scrolled .header {
+    top: 20px;
+  }
+
+  .scrolled #logo {
+    left: 140px;
+  }
+
+  /* ---- works ---- */
+  .carousel-wrap {
+    height: 560px;
+  }
+
+  .card-item {
+    width: 320px;
+    height: 427px;
+  }
+
+  /* ---- profile ---- */
+  #profile .list_wrap {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .my {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my .card {
+    min-width: 240px;
+    height: 320px;
+  }
+
+  #profile .top {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #profile .left_wrap {
+    width: 100%;
+  }
+
+  /* ---- contact ---- */
+  .word {
+    font-size: 6rem;
+  }
+
+  .contact-img {
+    width: 320px;
+    height: 388px;
+  }
+
+  /* ---- before-after ---- */
+  .laptop {
+    width: 640px;
+    height: 376px;
+  }
+
+  .screen-inner {
+    top: 20px;
+    left: 78px;
+    right: 74px;
+    width: 488px;
+    height: 306px;
+  }
+
+  .ba-title {
+    font-size: 7rem;
+  }
+
+  /* ---- etc ---- */
+  #etc {
+    margin-top: 15rem;
+    gap: 2rem;
+  }
+
+  /* ---- location ---- */
+  .location-wrap {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .location-text h2 {
+    font-size: 4rem;
+  }
+
+  /* ---- footer ---- */
+  #footer {
+    padding: 60px 80px;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  #footer .left,
+  #footer .right {
+    width: 100%;
+  }
+
+  #footer .left ul {
+    margin-bottom: 4rem;
+    gap: 3rem;
+  }
+}
+
+/* ── 모바일 (~767px) ─────────────────────────────────────── */
+@media (max-width: 767px) {
+
+  /* ---- 공통 ---- */
+  html {
+    font-size: 55%;
+  }
+
+  .conwrap {
+    margin: 8rem 2.4rem;
+  }
+
+  /* ---- intro ---- */
+  #intro .left,
+  #intro .right {
+    width: 22%;
+  }
+
+  #logo {
+    width: 80%;
+    text-align: center;
+  }
+
+  #logo .title {
+    font-size: 4.2rem;
+    white-space: nowrap;
+  }
+
+  #toggle {
+    width: 72px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  #toggle .circle {
+    width: 32px;
+    height: 32px;
+  }
+
+  #toggle.on .circle {
+    transform: translateX(32px);
+  }
+
+  .scroll-text {
+    font-size: 1.2rem;
+    bottom: 24px;
+  }
+
+  /* 스크롤 후 로고 축소 위치 조정 */
+  .scrolled #logo {
+    left: 50px;
+    top: 8px;
+    transform: scale(0.18);
+    transform-origin: left center;
+  }
+
+  /* ---- header ---- */
+  .header {
+    left: 16px;
+    right: 16px;
+    top: 16px;
+    padding: 0 2rem;
+  }
+
+  .scrolled .header {
+    top: 10px;
+  }
+
+  .header nav {
+    padding: 1.6rem 0;
+    justify-content: flex-end;
+  }
+
+  /* PC nav 링크 숨기기 (햄버거만) */
+  .header nav a {
+    display: none;
+  }
+
+  /* 햄버거는 항상 노출 */
+  .ham-btn {
+    position: static;
+    transform: none;
+  }
+
+  /* ---- works ---- */
+  #works {
+    padding: 10rem 0 0;
+  }
+
+  .works-title {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .works-tabs {
+    gap: 1.6rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+
+  .works-tabs button {
+    font-size: 1.4rem;
+  }
+
+  .carousel-wrap {
+    height: 440px;
+  }
+
+  .card-item {
+    width: 240px;
+    height: 320px;
+    border-radius: 14px;
+  }
+
+  .slide-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .slide-info p {
+    font-size: 1.2rem;
+  }
+
+  /* ---- profile ---- */
+  #profile .list_wrap {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .my {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my .card {
+    width: 100%;
+    max-width: 280px;
+    min-width: unset;
+    height: 360px;
+  }
+
+  .my span,
+  .my b,
+  .my p {
+    font-size: 2rem;
+  }
+
+  #profile .top {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #profile .left_wrap {
+    width: 100%;
+  }
+
+  #profile .list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  #profile .tit h3 {
+    font-size: 2rem;
+  }
+
+  #profile .tit em {
+    font-size: 1.4rem;
+  }
+
+  #profile .list li:nth-child(2) div p {
+    font-size: 1.5rem;
+  }
+
+  .bottom_wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .bottom_wrap li:nth-child(2) {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .bottom_wrap li:nth-child(2) img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ---- contact ---- */
+  #contact {
+    height: 250vh;
+  }
+
+  .word {
+    font-size: 3.8rem;
+  }
+
+  .contact-img {
+    width: 240px;
+    height: 291px;
+  }
+
+  /* ---- before-after ---- */
+  #before-after {
+    height: 250vh;
+    margin-bottom: -200px;
+  }
+
+  .ba-panel {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  .ba-title {
+    font-size: 5rem;
+    order: 0 !important;
+  }
+
+  .laptop {
+    width: 340px;
+    height: 200px;
+  }
+
+  .screen-inner {
+    top: 11px;
+    left: 42px;
+    right: 40px;
+    width: 258px;
+    height: 162px;
+  }
+
+  .before-laptop,
+  .after-laptop {
+    order: 1 !important;
+  }
+
+  /* ---- etc ---- */
+  #etc {
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+
+  #etc ul {
+    width: 100%;
+  }
+
+  #etc .line02 {
+    transform: translateY(0);
+  }
+
+  #etc ul li .txt h3 {
+    font-size: 1.8rem;
+  }
+
+  #etc ul li .txt p {
+    font-size: 1.3rem;
+  }
+
+  .etc-more {
+    margin-top: 4rem;
+  }
+
+  .etc-more a {
+    font-size: 1.8rem;
+  }
+
+  /* ---- location ---- */
+  .location-wrap {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .location-text h2 {
+    font-size: 3.4rem;
+    line-height: 1.4;
+  }
+
+  #map {
+    height: 280px;
+  }
+
+  /* ---- footer ---- */
+  #footer {
+    padding: 50px 24px;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  #footer .left,
+  #footer .right {
+    width: 100%;
+  }
+
+  #footer .left ul {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #footer .left ul a {
+    font-size: 2rem;
+  }
+
+  #footer .left p {
+    font-size: 1.3rem;
+    word-break: keep-all;
+    line-height: 1.7;
+  }
+
+  #footer .right ul {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  #footer .right ul span {
+    font-size: 1.3rem;
+  }
+
+  #footer .right ul p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ── 초소형 모바일 (~374px) ──────────────────────────────── */
+@media (max-width: 374px) {
+
+  html {
+    font-size: 48%;
+  }
+
+  #logo .title {
+    font-size: 3.6rem;
+  }
+
+  .word {
+    font-size: 3rem;
+  }
+
+  .laptop {
+    width: 290px;
+    height: 170px;
+  }
+
+  .screen-inner {
+    top: 9px;
+    left: 36px;
+    right: 34px;
+    width: 220px;
+    height: 138px;
+  }
+}
