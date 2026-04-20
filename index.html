@@ -26,7 +26,7 @@
     <div class="intro">
 
       <div class="logo" id="logo">
-        <span class="year">©2026</span>
+        <!-- <span class="year">©2026</span> -->
         <div class="txt">
           <h1 class="title">PORTFOLI</h1>
           <div class="toggle" id="toggle">
@@ -35,9 +35,20 @@
         </div>
       </div>
 
-      <figure class="left"><img src="images/info/bg_left.png"></figure>
-
-      <figure class="right"><img src="images/info/bg_right.png"></figure>
+      <figure class="left">
+        <div class="scroll-strip">
+          <img src="images/info/bg_left.png">
+          <img src="images/info/bg_left.png">
+          <img src="images/info/bg_left.png">
+        </div>
+      </figure>
+      <figure class="right">
+        <div class="scroll-strip">
+          <img src="images/info/bg_right.png">
+          <img src="images/info/bg_right.png">
+          <img src="images/info/bg_right.png">
+        </div>
+      </figure>
 
       <div class="scroll-text">SCROLL DOWN</div>
     </div>
@@ -46,7 +57,7 @@
   <header class="header" id="header">
     <nav>
       <a href="#about">ABOUT</a>
-      <a href="#works">WORK</a>
+      <a href="sub/list.html">WORK</a>
       <a href="#contact">FAQ</a>
       <button class="ham-btn" id="hamBtn">
         <img src="images/main/ico_ham.png" alt="메뉴">
@@ -59,7 +70,7 @@
   <nav class="mobile-nav" id="mobileNav">
     <button class="close-btn" id="closeBtn">&#10005;</button>
     <a href="#about">About</a>
-    <a href="#works">Work</a>
+    <a href="sub/list.html">Work</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -76,11 +87,10 @@
     <div class="tab-content" id="tab-web">
       <div class="carousel-wrap">
         <div class="carousel-track" id="track"></div>
-      </div>
-      <p class="works-label" id="works-label"></p>
-      <div class="nav-wrap">
-        <button class="nav-btn" id="prevBtn">&#8592;</button>
-        <button class="nav-btn" id="nextBtn">&#8594;</button>
+        <div class="nav-wrap" id="navWrap">
+          <button class="nav-btn" id="prevBtn">&#8592;</button>
+          <button class="nav-btn" id="nextBtn">&#8594;</button>
+        </div>
       </div>
     </div>
 
@@ -285,9 +295,9 @@
 
         <!-- BEFORE -->
         <div class="ba-panel">
-          <div class="ba-text">
+          <!-- <div class="ba-text">
             <p>클라이언트의 니즈를 반영하여<br>명료한 디자인을 산출합니다.</p>
-          </div>
+          </div> -->
           <h2 class="ba-title">Before</h2>
           <div class="laptop-wrap before-laptop">
             <div class="laptop">

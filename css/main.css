@@ -19,6 +19,8 @@ body {
 #intro {
   overflow: hidden;
   background-color: #111;
+  height: 100vh;
+  position: relative;
 }
 
 #intro .intro {
@@ -35,7 +37,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.5s ease;
   color: #fff;
-  z-index: 1001;
+  z-index: 1002;
 }
 
 #logo .title {
@@ -56,7 +58,7 @@ body {
 /* 스크롤 후 상태 */
 .scrolled #logo {
   position: fixed;
-  top: 12px;
+  top: 5px;
   left: 215px;
   transform: scale(0.27);
   transform-origin: left center;
@@ -108,24 +110,95 @@ body.scrolled #logo .title {
   transform: translateX(68px);
 }
 
+/* intro 이미지 양쪽 고정 */
+#intro .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-strip {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10rem;
+  /* 이미지 사이 간격 — 원하는 값으로 조절 */
+}
+
+.scroll-strip img {
+  width: 100%;
+  display: block;
+}
+
+/* left: 위로 흐름 */
+.left .scroll-strip {
+  animation: scrollUp 120s linear infinite;
+  animation-play-state: paused;
+}
+
+/* right: 아래로 흐름 */
+.right .scroll-strip {
+  animation: scrollDown 120s linear infinite;
+  animation-play-state: paused;
+}
+
+/* active 되면 재생 */
+.left.active .scroll-strip {
+  animation-play-state: running;
+}
+
+.right.active .scroll-strip {
+  animation-play-state: running;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .left {
   opacity: 0;
-  transition: transform 5s ease, opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .right {
   opacity: 0;
-  transition: transform 5s ease, opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .left.active {
   opacity: 1;
-  transform: translateY(-100%);
 }
 
 .right.active {
   opacity: 1;
-  transform: translateY(100%);
 }
 
 .scroll-text {
@@ -141,6 +214,8 @@ body.scrolled #logo .title {
   opacity: 1;
 }
 
+
+
 /* header 고정 + 유리 효과 */
 .header {
   position: fixed;
@@ -149,13 +224,17 @@ body.scrolled #logo .title {
   right: 180px;
   width: auto;
   /* width: 100% 제거 */
-  z-index: 1000;
+  z-index: 1001;
   opacity: 0;
   transition: opacity 0.3s;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.08);
   border-radius: 50px;
   /* 알약 형태 */
   padding: 0 3rem;
@@ -163,7 +242,7 @@ body.scrolled #logo .title {
 
 .scrolled .header {
   opacity: 1;
-  top: 50px;
+  top: 30px;
 }
 
 .header nav {
@@ -337,7 +416,7 @@ body.scrolled #logo .title {
 
 .carousel-wrap {
   position: relative;
-  height: 820px;
+  height: 680px;
   overflow: hidden;
 }
 
@@ -349,8 +428,8 @@ body.scrolled #logo .title {
 
 .card-item {
   position: absolute;
-  width: 500px;
-  height: 666px;
+  width: 400px;
+  height: 533px;
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -394,19 +473,11 @@ body.scrolled #logo .title {
 }
 
 /* 제목 — 버튼 위 */
-.works-label {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  color: #111;
-}
-
 .nav-wrap {
+  position: absolute;
   display: flex;
-  justify-content: center;
   gap: 1.2rem;
+  z-index: 20;
 }
 
 .nav-btn {
@@ -701,7 +772,7 @@ body.scrolled #logo .title {
 
 /*before-after*/
 #before-after {
-  height: 400vh;
+  height: 300vh;
   margin-bottom: -290px;
   /* 랩탑 높이(591px) - 원하는 간격(150px) 정도 */
 }
@@ -762,20 +833,24 @@ body.scrolled #logo .title {
 .before-laptop {
   transform: translateY(120%);
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .before-laptop.show {
-  transform: translateY(-30%);
+  transform: translateY(0);
 }
 
 .after-laptop {
   transform: translateY(120%);
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   order: 2;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .after-laptop.show {
-  transform: translateY(-30%);
+  transform: translateY(0);
 }
 
 /* 랩탑 본체 */
@@ -826,8 +901,9 @@ body.scrolled #logo .title {
   position: relative;
   display: flex;
   gap: 3rem;
+  margin-top: 30rem;
+  margin-bottom: 0rem;
   align-items: flex-start;
-  /* 추가 */
   z-index: 1;
 }
 
@@ -837,7 +913,7 @@ body.scrolled #logo .title {
 
 /* line02만 위로 50px 올리고, 스크롤로 내려오게 */
 #etc .line02 {
-  transform: translateY(-50px);
+  transform: translateY(-70px);
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

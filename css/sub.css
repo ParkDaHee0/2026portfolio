@@ -30,8 +30,8 @@ body {
 }
 
 #header {
-  margin: 5rem 18rem 0;
-  padding: 3rem;
+  margin: 3rem 18rem 0;
+  padding: 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +94,7 @@ body {
 #header nav a {
   display: block;
   width: calc((100% - 10rem) / 3);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: 'ProstoOne', sans-serif;
 }
 
