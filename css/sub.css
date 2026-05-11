@@ -31,7 +31,7 @@ body {
 
 #header {
   margin: 3rem 18rem 0;
-  padding: 2.4rem;
+  padding: 2.4rem 3.0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -445,6 +445,7 @@ body {
   display: inline-block;
   font-family: 'ProstoOne', serif;
   font-size: 3.6rem;
+  margin-top: 5.0rem;
   margin-bottom: 2.0rem;
 }
 
@@ -512,6 +513,174 @@ body {
   font-family: 'ProstoOne', serif;
   font-size: 2rem;
   color: #111;
+}
+
+/*profile*/
+
+#profile {
+  position: relative;
+}
+
+#profile .list_wrap {
+  display: flex;
+  gap: 10rem;
+  align-items: flex-start;
+}
+
+.my {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.my .card {
+  perspective: 1000px;
+  width: 100%;
+  min-width: 300px;
+  height: 420px;
+}
+
+.my .card-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* 이미지 꽉 채우기 */
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+/* 뒤집기 상태 */
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 앞 / 뒤 공통 */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+/* 뒤쪽 */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.my .pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my #togglebtn {
+  padding: 3px;
+  width: 60px;
+  height: 32px;
+  border-radius: 28px;
+  background: #b6b6b6;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.my #togglebtn .circle {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease;
+}
+
+.my #togglebtn.on {
+  background: #FF4800;
+}
+
+.my #togglebtn.on .circle {
+  transform: translateX(28px);
+}
+
+.my span,
+.my b,
+.my p {
+  font-size: 3rem;
+}
+
+#profile .top {
+  display: flex;
+  gap: 10rem;
+}
+
+#profile .list {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 7.0rem;
+}
+
+#profile .left_wrap {
+  width: 50%;
+}
+
+#profile .tit h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#profile .tit em {
+  font-size: 1.7rem;
+  color: #888888;
+}
+
+#profile .list li:nth-child(2) div {
+  margin-bottom: 2.8rem;
+}
+
+#profile .list li:nth-child(2) div p {
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+}
+
+#profile .list li:nth-child(2) div span {
+  color: #727272;
+  display: inline-block;
+  margin-right: 2.4rem;
+}
+
+#profile .list li:nth-child(2) div span:first-of-type {
+  position: relative;
+}
+
+#profile .list li:nth-child(2) div span:first-of-type::before {
+  content: '';
+  position: absolute;
+  right: -1.4rem;
+  top: 1px;
+  width: 1px;
+  height: 16px;
+  background: #E2E2E2;
+}
+
+.bottom_wrap {
+  display: flex;
+  gap: 5rem;
+}
+
+.bottom_wrap li:nth-child(2) {
+  display: flex;
+  gap: 1.2rem;
 }
 
 

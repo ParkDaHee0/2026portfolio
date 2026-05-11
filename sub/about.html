@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 목록</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <a href="../index.html" class="txt">
+      <h1 class="title">PORTFOLI</h1>
+      <div class="toggle" id="toggle">
+        <div class="circle"></div>
+      </div>
+    </a>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="list.html">WORK</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="ham-btn" id="hamBtn">
+      <img src="../images/main/ico_ham.png" alt="메뉴">
+    </button>
+  </header>
+
+  <section id="profile" class="conwrap">
+
+    <div class="list_wrap">
+
+      <div class="my">
+        <div class="card">
+          <div class="card-inner">
+
+            <!-- 앞 -->
+            <div class="card-front">
+              <img src="../images/main/my.jpg" alt="증명사진">
+            </div>
+
+            <!-- 뒤 -->
+            <div class="card-back">
+              <a href="download"><img src="../images/main/.jpg" alt="이력서"></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pdf">
+          <span>토글</span>
+          <div class="toggle" id="togglebtn">
+            <div class="circle"></div>
+          </div>
+          <span>처럼</span>
+        </div>
+
+        <b>확실한 디자이너</b>
+        <p>박다희 입니다</p>
+      </div>
+
+      <div class="txt">
+        <div class="top">
+          <div class="left_wrap">
+            <ul class="list">
+              <li class="tit">
+                <h3>인적사항</h3>
+                <em>profile</em>
+              </li>
+
+              <li>
+                <div>
+                  <p>2000.08.05</p>
+                </div>
+                <div>
+                  <p>+82 10-5460-9703</p>
+                </div>
+                <div>
+                  <p>dpurpose20@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="list">
+              <li class="tit">
+                <h3>자격증</h3>
+                <em>Certificate</em>
+              </li>
+
+              <li>
+                <div>
+                  <p>컴퓨터그래픽스기능사</p>
+                  <span>한국산업인력공단</span>
+                  <span>2024.09.25</span>
+                </div>
+
+                <div>
+                  <p>웹디자인기능사</p>
+                  <span>한국산업인력공단</span>
+                  <span>2024.09.11</span>
+                </div>
+
+                <div>
+                  <p>자동차운전면허 2종 보통</p>
+                  <span>부산광역시경찰청</span>
+                  <span>2022.06.21</span>
+                </div>
+
+                <div>
+                  <p>e-Test Professionals 파워포인트 1급</p>
+                  <span>e-Test</span>
+                  <span>2019.12.07</span>
+                </div>
+
+                <div>
+                  <p>e-Test Professionals 워드 1급</p>
+                  <span>e-Test</span>
+                  <span>2019.11.09</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right_wrap">
+            <ul class="list">
+              <li class="tit">
+                <h3>활동내역</h3>
+                <em>Activities</em>
+              </li>
+
+              <li>
+                <div>
+                  <p>부산인터넷방송국</p>
+                  <span>웹디자이너</span>
+                  <span>2024.12 - 2025.12</span>
+                </div>
+
+                <div>
+                  <p>(주)에스씨티 아르고스케어 보호자용 알림장 앱 리뉴얼 </p>
+                  <span>실무 프로젝트 참가</span>
+                  <span>2024.08 - 2024.09</span>
+                </div>
+
+                <div>
+                  <p>(주)테렌즈 사내 다크모드 그룹웨어 구축</p>
+                  <span>실무 프로젝트 참가</span>
+                  <span>2024.07 - 2024.08</span>
+                </div>
+
+                <div>
+                  <p>부산IT교육센터</p>
+                  <span>수료생</span>
+                  <span>2024.03 - 2024.10</span>
+                </div>
+
+                <div>
+                  <p>롯데백화점 애플(프리스비) 근무</p>
+                  <span>아르바이트</span>
+                  <span>2023.07 - 2024.02</span>
+                </div>
+
+                <div>
+                  <p>경북 중소기업 디자인 사업개발지원</p>
+                  <span>상세페이지 디자이너</span>
+                  <span>2022.05 - 2022.12</span>
+                </div>
+
+                <div>
+                  <p>2021 지역밀착형 연구활동 지원사업 최우수상</p>
+                  <span>패키지 디자이너</span>
+                  <span>2021.05 - 2021.12</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div><!-- top e-->
+
+        <ul class="bottom_wrap">
+          <li class="tit">
+            <h3>사용스킬</h3>
+            <em>Skills</em>
+          </li>
+
+          <li>
+            <img src="../images/main/icon01.png" alt="포토샵">
+            <img src="../images/main/icon02.png" alt="일러스트">
+            <img src="../images/main/icon03.png" alt="피그마">
+            <img src="../images/main/icon04.png" alt="vs코드">
+            <img src="../images/main/icon05.png" alt="에딧플러스">
+            <img src="../images/main/icon06.png" alt="html">
+            <img src="../images/main/icon07.png" alt="js">
+            <img src="../images/main/icon08.png" alt="css">
+            <img src="../images/main/icon09.png" alt="라라벨">
+            <img src="../images/main/icon10.png" alt="그누보드">
+          </li>
+        </ul>
+      </div><!-- txt e-->
+
+    </div><!-- list_wrap e-->
+  </section>
+
+  <section id="footer">
+    <div class="left">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="list.html">Work</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <p>본 웹사이트의 모든 콘텐츠(디자인, 이미지, 코드 등)는 개인 포트폴리오 용도로 제작되었으며 상업적 목적이 없습니다.<br> 무단 복제, 배포 및 사용을 금지하며, 위반 시 법적 책임을 물을 수
+        있습니다.
+      </p>
+      <p>©2026 박다희. ALL RIGHTS RESERVED</p>
+    </div>
+
+    <div class="right">
+      <ul>
+        <li>
+          <span>Tel.</span>
+          <p>+82 10-5460-9703</p>
+        </li>
+
+        <li>
+          <span>Add</span>
+          <p>Busan. Dongraegu</p>
+        </li>
+
+        <li>
+          <span>E-mail</span>
+          <p>dpurpose20@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/sub.js"></script>
+</body>
+
+</html>
