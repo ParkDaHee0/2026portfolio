@@ -21,6 +21,15 @@ body {
   padding: 7rem 0;
 }
 
+.conwrap_etc {
+  margin: 0 18rem;
+  padding: 0 0 7rem 0;
+}
+
+.conwrap_etc.first {
+  padding: 14rem 0 0;
+}
+
 .last {
   padding: 7rem 0 14rem;
 }
@@ -463,6 +472,110 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/*********etc 디자인가이드 **********/
+#design_guide.etc {
+  display: flex;
+  gap: 3rem;
+}
+
+#design_guide.etc div {
+  width: calc((100% - 3rem) / 2);
+  overflow: hidden;
+  padding: 0;
+}
+
+#design_guide.etc div img {
+  width: 100%;
+}
+
+#design_guide ul {
+  width: calc((100% - 3rem) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+#design_guide ul li {
+  width: calc((100% - 3rem) / 2);
+  border-radius: 2rem;
+}
+
+#design_guide ul li:first-child {
+  background-color: #f8f8f8;
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+}
+
+#design_guide ul li:nth-child(2) {
+  padding: 7rem 4rem;
+}
+
+#design_guide ul li:nth-child(2) img {
+  width: 70%;
+}
+
+#design_guide ul li:last-child {
+  padding: 9rem 6rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #f8f8f8;
+}
+
+#design_guide.etc h4 {
+  display: inline-block;
+  margin-bottom: 4rem;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+#design_guide.etc p {
+  font-size: 1.7rem;
+}
+
+#main_design ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  align-items: flex-start;
+  margin-bottom: 14rem;
+}
+
+#main_design ul:last-child {
+  margin-bottom: 0;
+}
+
+#main_design ul li.txt {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 25%;
+}
+
+#main_design ul h3 {
+  display: inline-block;
+  font-family: 'ProstoOne', serif;
+  font-size: 3.6rem;
+  margin-top: 5.0rem;
+  margin-bottom: 2.0rem;
+}
+
+#main_design ul p {
+  font-size: 1.7rem;
+}
+
+#main_design ul li.img {
+  width: 65%;
+}
+
+#main_design ul li img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 #sub_mokup {
   margin: 7rem 0;
   overflow: hidden;
@@ -491,8 +604,12 @@ body {
   width: calc((100% - 7rem) / 2);
 }
 
-#sub_design ul li:first-child {
+#sub_design ul li {
   margin-bottom: 7rem;
+}
+
+#sub_design ul li:last-child {
+  margin-bottom: 0;
 }
 
 #sub_design ul li img {
@@ -501,19 +618,88 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#sub_design .back {
+.back {
   display: flex;
   gap: 2rem;
   justify-content: center;
   margin-top: 7rem;
 }
 
-#sub_design .back a {
+.back a {
   display: block;
   font-family: 'ProstoOne', serif;
   font-size: 2rem;
   color: #111;
 }
+
+/**main_etc**/
+#main_etc .tit {
+  margin-bottom: 5rem;
+}
+
+#main_etc .tit h3 {
+  display: inline-block;
+  font-family: 'ProstoOne', serif;
+  font-size: 3.6rem;
+  margin-bottom: 2.0rem;
+}
+
+#main_etc .tit p {
+  font-size: 1.7rem;
+}
+
+#main_etc .type {
+  display: flex;
+  gap: 7rem;
+  justify-content: space-between;
+}
+
+#main_etc .type li {
+  width: calc((100% - 7rem) / 2);
+  text-align: center;
+}
+
+#main_etc .type li img {
+  display: block;
+  margin-bottom: 3.0rem;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#main_etc .type li p {
+  font-size: 2.5rem;
+  font-family: 'ProstoOne', serif;
+}
+
+/**main_detail**/
+
+#main_detail {
+  text-align: center;
+}
+
+#main_detail h3 {
+  display: inline-block;
+  font-family: 'ProstoOne', serif;
+  font-size: 3.6rem;
+  margin-bottom: 2.0rem;
+}
+
+#main_detail p {
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+}
+
+#main_detail figure {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main_detail figure img {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /*profile*/
 

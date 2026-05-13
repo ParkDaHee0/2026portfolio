@@ -104,7 +104,6 @@ body {
   padding: 0;
   width: 32px;
   height: 32px;
-  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -484,8 +483,12 @@ body {
   width: calc((100% - 7rem) / 2);
 }
 
-#sub_design ul li:first-child {
+#sub_design ul li {
   margin-bottom: 7rem;
+}
+
+#sub_design ul li:last-child {
+  margin-bottom: 0;
 }
 
 #sub_design ul li img {
