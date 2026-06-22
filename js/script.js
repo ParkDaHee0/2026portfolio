@@ -95,7 +95,7 @@ const allSlides = [
     title: '파크골프 예약 어플리케이션',
     sub: 'Mobile / 기여도 100%',
     category: 'app',
-    href: '../sub/sub_msgolf.html'
+    href: '/2026portfolio/sub/sub_msgolf.html'
   },
 
   {
@@ -111,7 +111,7 @@ const allSlides = [
     title: '끄레몽',
     sub: 'Web / 기여도 100%',
     category: 'web',
-    href: '../sub/sub_cremon.html'
+    href: '/2026portfolio/sub/sub_cremon.html'
   },
 
   {
@@ -119,7 +119,7 @@ const allSlides = [
     title: '자연농산',
     sub: 'Web / 기여도 100%',
     category: 'web',
-    href: '../sub/sub_jayeon.html'
+    href: '/2026portfolio/sub/sub_jayeon.html'
   },
 
   {
@@ -151,7 +151,7 @@ const allSlides = [
     title: 'PLUTO',
     sub: 'Web / 기여도 30%',
     category: 'web',
-    href: '../sub/sub_pluto.html'
+    href: '/2026portfolio/sub/sub_pluto.html'
   },
 
   {
@@ -199,7 +199,7 @@ const allSlides = [
     title: '국립부산과학관 수어서비스',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_sci.html'
+    href: '/2026portfolio/sub/sub_detail_sci.html'
   },
 
   {
@@ -207,7 +207,7 @@ const allSlides = [
     title: '동진수건',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_towel.html'
+    href: '/2026portfolio/sub/sub_detail_towel.html'
   },
 
   {
@@ -215,7 +215,7 @@ const allSlides = [
     title: '시간과 리듬 륜',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_ryun.html'
+    href: '/2026portfolio/sub/sub_detail_ryun.html'
   },
 
   {
@@ -223,7 +223,7 @@ const allSlides = [
     title: '우리학교를 지켜라',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_school.html'
+    href: '/2026portfolio/sub/sub_detail_school.html'
   },
 
   {
@@ -231,7 +231,7 @@ const allSlides = [
     title: '와인코리아',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_wine.html'
+    href: '/2026portfolio/sub/sub_detail_wine.html'
   },
 
   {
@@ -239,7 +239,7 @@ const allSlides = [
     title: '스킨',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_skin.html'
+    href: '/2026portfolio/sub/sub_detail_skin.html'
   },
 
   {
@@ -247,7 +247,7 @@ const allSlides = [
     title: '향수',
     sub: '상세페이지 / 기여도 100%',
     category: 'detail',
-    href: '../sub/sub_detail_perfume.html'
+    href: '/2026portfolio/sub/sub_detail_perfume.html'
   },
 
   {
@@ -255,7 +255,7 @@ const allSlides = [
     title: 'LG에너지솔루션',
     sub: '동아리 티셔츠 / 기여도 100%',
     category: 'etc',
-    href: '../sub/sub_lg.html'
+    href: '/2026portfolio/sub/sub_lg.html'
   },
 
   {
@@ -263,7 +263,7 @@ const allSlides = [
     title: '라파농',
     sub: '화장품 패키지 / 기여도 100%',
     category: 'etc',
-    href: '../sub/sub_rafanon.html'
+    href: '/2026portfolio/sub/sub_rafanon.html'
   },
 
   {
@@ -271,7 +271,7 @@ const allSlides = [
     title: '바른걸음연구소',
     sub: '카드뉴스 / 기여도 100%',
     category: 'etc',
-    href: '../sub/sub_etc_goodstep.html'
+    href: '/2026portfolio/sub/sub_etc_goodstep.html'
   },
 
   {
@@ -279,7 +279,7 @@ const allSlides = [
     title: '호육정',
     sub: '피켓 / 기여도 100%',
     category: 'etc',
-    href: '../sub/sub_etc.html'
+    href: '/2026portfolio/sub/sub_etc.html'
   }
 
 ];
