@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <a href="../index.html" class="txt">
+      <h1 class="title">PORTFOLI</h1>
+      <div class="toggle" id="toggle">
+        <div class="circle"></div>
+      </div>
+    </a>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="list.html">WORK</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="ham-btn" id="hamBtn">
+      <img src="../images/main/ico_ham.png" alt="메뉴">
+    </button>
+  </header>
+
+  <!-- 모바일 nav -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeBtn">&#10005;</button>
+    <a href="about.html">About</a>
+    <a href="list.html">Work</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <section id="sub_vis" class="conwrap_etc first">
+    <div class="work_info_wrap">
+      <div class="work_info">
+        <p>detail / design</p>
+        <h2>우리학교를 지켜라</h2>
+      </div>
+      <ul>
+        <li>
+          <span>Client</span>
+          <p>강주학교캠프</p>
+        </li>
+        <li>
+          <span>Date</span>
+          <p>2025.01</p>
+        </li>
+        <li>
+          <span>Contribution</span>
+          <p>100%</p>
+        </li>
+        <!-- <li>
+          <span>Url</span>
+          <a href="#">MS골프</a>
+        </li> -->
+      </ul>
+    </div>
+  </section>
+  <!-- #sub_vis e -->
+
+  <section id="design_guide" class="conwrap_etc etc">
+    <div>
+      <img src="../images/works/thumb_school.jpg" alt="섬네일">
+    </div>
+    <ul>
+      <li><img src="../images/works/logo_school.png" alt="로고"></li>
+      <li class="school"><img src="../images/works/font_ms.png" alt="폰트"></li>
+      <li>
+        <h4>우리학교를 지켜라 상세페이지</h4>
+        <p>AR 기반 게임 콘텐츠의 세계관과 플레이 방식을 효과적으로 전달하기 위해 제작한 상세페이지입니다. 스토리 진행, 미션 수행, 보상 획득 과정을 시각적으로 정리하여 사용자가 콘텐츠의 흐름을
+          자연스럽게 이해할 수 있도록 구성했습니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="main_detail" class="conwrap last">
+    <h3>Detail Design</h3>
+    <p>캐릭터, 미션, 수집 요소 등 핵심 콘텐츠를 시각적으로 표현하여 흥미와 몰입감을 높였습니다.</p>
+    <figure><img src="../images/works/detail_school.jpg" alt=""></figure>
+
+    <div class="back">
+      <a href="../sub/list.html">List</a>
+      <img src="../images/works/ico_list_arrow.png" alt="">
+    </div>
+  </section>
+
+
+
+  <section id="footer">
+    <div class="left">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="list.html">Work</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <p>본 웹사이트의 모든 콘텐츠(디자인, 이미지, 코드 등)는 개인 포트폴리오 용도로 제작되었으며 상업적 목적이 없습니다.<br> 무단 복제, 배포 및 사용을 금지하며, 위반 시 법적 책임을 물을 수
+        있습니다.
+      </p>
+      <p>©2026 박다희. ALL RIGHTS RESERVED</p>
+    </div>
+
+    <div class="right">
+      <ul>
+        <li>
+          <span>Tel.</span>
+          <p>+82 10-5460-9703</p>
+        </li>
+
+        <li>
+          <span>Add</span>
+          <p>Busan. Dongraegu</p>
+        </li>
+
+        <li>
+          <span>E-mail</span>
+          <p>dpurpose20@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/sub.js"></script>
+</body>
+
+</html>

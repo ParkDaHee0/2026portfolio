@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목</title>
+
+  <!-- font -->
+  <link rel="stylesheet" href="../css/font.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <a href="../index.html" class="txt">
+      <h1 class="title">PORTFOLI</h1>
+      <div class="toggle" id="toggle">
+        <div class="circle"></div>
+      </div>
+    </a>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="list.html">WORK</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="ham-btn" id="hamBtn">
+      <img src="../images/main/ico_ham.png" alt="메뉴">
+    </button>
+  </header>
+
+  <!-- 모바일 nav -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeBtn">&#10005;</button>
+    <a href="about.html">About</a>
+    <a href="list.html">Work</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <section id="sub_vis" class="conwrap first">
+    <div class="work_info_wrap">
+      <div class="work_info">
+        <p>web / design</p>
+        <h2>자연농산 웹사이트</h2>
+      </div>
+      <ul>
+        <li>
+          <span>Client</span>
+          <p>(주) 자연농산</p>
+        </li>
+        <li>
+          <span>Date</span>
+          <p>2025.11</p>
+        </li>
+        <li>
+          <span>Contribution</span>
+          <p>100%</p>
+        </li>
+        <li>
+          <span>Url</span>
+          <a href="#">-</a>
+        </li>
+      </ul>
+    </div>
+    <figure><img src="../images/works/vis_jayeon.jpg" alt=""></figure>
+  </section>
+  <!-- #sub_vis e -->
+
+  <section id="marquee">
+    <ul>
+      <li>
+        <p>건조함</p>
+      </li>
+      <li>
+        <p>차가움</p>
+      </li>
+      <li class="on">
+        <p>자연미</p>
+      </li>
+      <li>
+        <p>탁함</p>
+      </li>
+      <li>
+        <p>무거움</p>
+      </li>
+      <li>
+        <p>경직됨</p>
+      </li>
+      <li class="on">
+        <p>싱그러움</p>
+      </li>
+      <li>
+        <p>투박함</p>
+      </li>
+      <li>
+        <p>혼란함</p>
+      </li>
+      <li>
+        <p>산만함</p>
+      </li>
+      <li>
+        <p>자유로움</p>
+      </li>
+      <li class="on">
+        <p>편안함</p>
+      </li>
+      <li>
+        <p>자극적</p>
+      </li>
+      <li>
+        <p>딱딱함</p>
+      </li>
+      <li>
+        <p>복잡함</p>
+      </li>
+      <li class="on">
+        <p>정갈함</p>
+      </li>
+      <li>
+        <p>강렬함</p>
+      </li>
+      <li>
+        <p>과밀함</p>
+      </li>
+    </ul>
+    <ol>
+      <li>
+        <p>어두움</p>
+      </li>
+      <li>
+        <p>메마름</p>
+      </li>
+      <li>
+        <p>혼잡함</p>
+      </li>
+      <li>
+        <p>거침함</p>
+      </li>
+      <li class="on">
+        <p>따뜻함</p>
+      </li>
+      <li>
+        <p>불안정</p>
+      </li>
+      <li>
+        <p>거친톤</p>
+      </li>
+      <li>
+        <p>무채색</p>
+      </li>
+      <li>
+        <p>탁함</p>
+      </li>
+      <li>
+        <p>답답함</p>
+      </li>
+      <li>
+        <p>날카로움</p>
+      </li>
+      <li>
+        <p>과장됨</p>
+      </li>
+      <li>
+        <p>흐트러짐</p>
+      </li>
+      <li class="on">
+        <p>안정감</p>
+      </li>
+      <li>
+        <p>경계감</p>
+      </li>
+      <li>
+        <p>복잡함</p>
+      </li>
+      <li>
+        <p>경직감</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="design_guide" class="conwrap">
+    <div class="jayeon_green">
+      <h4>자연농산 웹사이트</h4>
+      <p>신선한 마늘의 건강한 이미지를 직관적으로 전달하는 브랜드형 웹사이트로, 마늘이라는 식재료가 가진 ‘정직함’과 ‘신뢰감’을 시각적으로 풀어낸 디자인입니다. 자연을 연상시키는 그린 컬러와 따뜻한 우드 톤
+        이미지를 중심으로 구성하여 건강한 브랜드 무드를 강조하였으며, 넓은 비주얼과 카드형 레이아웃을 활용해 사용자가 정보를 편안하게 탐색할 수 있도록 설계하였습니다.</p>
+    </div>
+    <ul>
+      <li><img src="../images/works/logo_jayeon.png" alt="로고"></li>
+      <li class="jayeon_brown"><img src="../images/works/font_jayeon.png" alt="폰트"></li>
+      <li><img src="../images/works/type_jayeon.jpg" alt="느낌"></li>
+    </ul>
+  </section>
+
+  <section id="main_design" class="conwrap">
+    <ul>
+      <li class="txt">
+        <h3>Hero-Quick-Product</h3>
+        <p>메인 비주얼과 퀵 메뉴, 프리미엄 마늘 소개 영역은 건강한 농산물 브랜드의 신뢰감을 직관적으로 전달할 수 있도록 구성하였습니다. 실제 농가의 분위기를 담은 이미지와 내추럴한 컬러를 활용해 따뜻한
+          브랜드 무드를 형성하였으며, 아이콘형 메뉴와 카드 레이아웃을 적용해 사용자가 원하는 정보를 빠르게 탐색할 수 있도록 UX 중심의 구조로 설계하였습니다.</p>
+      </li>
+      <li class="img"><img src="../images/works/main_jayeon01.jpg" alt=""></li>
+    </ul>
+
+    <ul>
+      <li class="img"><img src="../images/works/main_jayeon02.jpg" alt=""></li>
+
+      <li class="txt">
+        <h3>Brand-Notice-Inquiry</h3>
+        <p>브랜드 소개와 공지사항, 문의 영역은 복잡한 정보 전달보다 편안한 사용자 흐름과 높은 가독성에 중점을 두었습니다. 넓은 여백과 안정감 있는 레이아웃을 활용해 콘텐츠 피로도를 줄였으며, 배너형
+          콘텐츠와 명확한 정보 구성을 통해 브랜드의 신뢰성과 사용자 접근성을 함께 강화하였습니다.</p>
+      </li>
+    </ul>
+  </section>
+
+  <div id="sub_mokup"><img src="../images/works/sub_jayeon_mokup.jpg" alt=""></div>
+
+  <section id="sub_design" class="conwrap last">
+    <h3>Sub Design</h3>
+    <div class="sub_img">
+      <ul>
+        <li><img src="../images/works/sub_jayeon01.jpg" alt=""></li>
+        <li><img src="../images/works/sub_jayeon03.jpg" alt=""></li>
+        <li><img src="../images/works/sub_jayeon05.jpg" alt=""></li>
+      </ul>
+      <ul>
+        <li><img src="../images/works/sub_jayeon02.jpg" alt=""></li>
+        <li><img src="../images/works/sub_jayeon04.jpg" alt=""></li>
+        <li><img src="../images/works/sub_jayeon06.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="back">
+      <a href="../sub/list.html">List</a>
+      <img src="../images/works/ico_list_arrow.png" alt="">
+    </div>
+
+  </section>
+
+  <section id="footer">
+    <div class="left">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="list.html">Work</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <p>본 웹사이트의 모든 콘텐츠(디자인, 이미지, 코드 등)는 개인 포트폴리오 용도로 제작되었으며 상업적 목적이 없습니다.<br> 무단 복제, 배포 및 사용을 금지하며, 위반 시 법적 책임을 물을 수
+        있습니다.
+      </p>
+      <p>©2026 박다희. ALL RIGHTS RESERVED</p>
+    </div>
+
+    <div class="right">
+      <ul>
+        <li>
+          <span>Tel.</span>
+          <p>+82 10-5460-9703</p>
+        </li>
+
+        <li>
+          <span>Add</span>
+          <p>Busan. Dongraegu</p>
+        </li>
+
+        <li>
+          <span>E-mail</span>
+          <p>dpurpose20@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/sub.js"></script>
+</body>
+
+</html>

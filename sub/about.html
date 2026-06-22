@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 
   <!-- js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -40,177 +41,178 @@
     </button>
   </header>
 
-  <section id="profile" class="conwrap">
+  <!-- 모바일 nav -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeBtn">&#10005;</button>
+    <a href="about.html">About</a>
+    <a href="list.html">Work</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
 
-    <div class="list_wrap">
+  <!-- visual -->
 
-      <div class="my">
-        <div class="card">
-          <div class="card-inner">
+  <section id="visual" class="conwrap first">
 
-            <!-- 앞 -->
-            <div class="card-front">
-              <img src="../images/main/my.jpg" alt="증명사진">
-            </div>
+    <div class="visual_txt">
 
-            <!-- 뒤 -->
-            <div class="card-back">
-              <a href="download"><img src="../images/main/.jpg" alt="이력서"></a>
-            </div>
+      <h2>
+        <strong>브랜딩</strong>과
+        <strong>사용성</strong> 사이의<br>
 
-          </div>
-        </div>
+        <strong>균형</strong>을 고민하는<br>
 
-        <div class="pdf">
-          <span>토글</span>
-          <div class="toggle" id="togglebtn">
-            <div class="circle"></div>
-          </div>
-          <span>처럼</span>
-        </div>
+        디자이너
+        <strong>박다희</strong>입니다.
+      </h2>
 
-        <b>확실한 디자이너</b>
-        <p>박다희 입니다</p>
+      <div class="contact">
+
+        <strong>CONTACT</strong>
+
+        <a href="tel:01054609703">
+          +82 10 5460 9703
+        </a>
+
+        <a href="mailto:dpurpose20@gmail.com">
+          dpurpose20@gmail.com
+        </a>
+
       </div>
 
-      <div class="txt">
-        <div class="top">
-          <div class="left_wrap">
-            <ul class="list">
-              <li class="tit">
-                <h3>인적사항</h3>
-                <em>profile</em>
-              </li>
+    </div>
 
-              <li>
-                <div>
-                  <p>2000.08.05</p>
-                </div>
-                <div>
-                  <p>+82 10-5460-9703</p>
-                </div>
-                <div>
-                  <p>dpurpose20@gmail.com</p>
-                </div>
-              </li>
-            </ul>
+    <ul class="visual_info">
 
-            <ul class="list">
-              <li class="tit">
-                <h3>자격증</h3>
-                <em>Certificate</em>
-              </li>
+      <li>
+        <strong>01+</strong>
+        <span>Year Experience</span>
+      </li>
 
-              <li>
-                <div>
-                  <p>컴퓨터그래픽스기능사</p>
-                  <span>한국산업인력공단</span>
-                  <span>2024.09.25</span>
-                </div>
+      <li>
+        <strong>30+</strong>
+        <span>Projects</span>
+      </li>
 
-                <div>
-                  <p>웹디자인기능사</p>
-                  <span>한국산업인력공단</span>
-                  <span>2024.09.11</span>
-                </div>
+      <li>
+        <strong>91.6%</strong>
+        <span>Average Contribution</span>
+      </li>
 
-                <div>
-                  <p>자동차운전면허 2종 보통</p>
-                  <span>부산광역시경찰청</span>
-                  <span>2022.06.21</span>
-                </div>
+    </ul>
 
-                <div>
-                  <p>e-Test Professionals 파워포인트 1급</p>
-                  <span>e-Test</span>
-                  <span>2019.12.07</span>
-                </div>
+  </section>
 
-                <div>
-                  <p>e-Test Professionals 워드 1급</p>
-                  <span>e-Test</span>
-                  <span>2019.11.09</span>
-                </div>
-              </li>
-            </ul>
-          </div>
 
-          <div class="right_wrap">
-            <ul class="list">
-              <li class="tit">
-                <h3>활동내역</h3>
-                <em>Activities</em>
-              </li>
 
-              <li>
-                <div>
-                  <p>부산인터넷방송국</p>
-                  <span>웹디자이너</span>
-                  <span>2024.12 - 2025.12</span>
-                </div>
+  <!-- ability -->
 
-                <div>
-                  <p>(주)에스씨티 아르고스케어 보호자용 알림장 앱 리뉴얼 </p>
-                  <span>실무 프로젝트 참가</span>
-                  <span>2024.08 - 2024.09</span>
-                </div>
+  <section id="ability">
 
-                <div>
-                  <p>(주)테렌즈 사내 다크모드 그룹웨어 구축</p>
-                  <span>실무 프로젝트 참가</span>
-                  <span>2024.07 - 2024.08</span>
-                </div>
+    <div class="conwrap">
 
-                <div>
-                  <p>부산IT교육센터</p>
-                  <span>수료생</span>
-                  <span>2024.03 - 2024.10</span>
-                </div>
+      <div class="ability_left">
 
-                <div>
-                  <p>롯데백화점 애플(프리스비) 근무</p>
-                  <span>아르바이트</span>
-                  <span>2023.07 - 2024.02</span>
-                </div>
+        <p class="ability_title">
+          Ability
+        </p>
 
-                <div>
-                  <p>경북 중소기업 디자인 사업개발지원</p>
-                  <span>상세페이지 디자이너</span>
-                  <span>2022.05 - 2022.12</span>
-                </div>
+        <div class="ability_txt">
 
-                <div>
-                  <p>2021 지역밀착형 연구활동 지원사업 최우수상</p>
-                  <span>패키지 디자이너</span>
-                  <span>2021.05 - 2021.12</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div><!-- top e-->
+          <h3 class="fill_text">Web Design</h3>
+          <h3 class="fill_text">UXUI Design</h3>
+          <h3 class="fill_text">Photoshop</h3>
+          <h3 class="fill_text">Illustrator</h3>
+          <h3 class="fill_text">HTML & CSS</h3>
 
-        <ul class="bottom_wrap">
-          <li class="tit">
-            <h3>사용스킬</h3>
-            <em>Skills</em>
-          </li>
+        </div>
 
-          <li>
-            <img src="../images/main/icon01.png" alt="포토샵">
-            <img src="../images/main/icon02.png" alt="일러스트">
-            <img src="../images/main/icon03.png" alt="피그마">
-            <img src="../images/main/icon04.png" alt="vs코드">
-            <img src="../images/main/icon05.png" alt="에딧플러스">
-            <img src="../images/main/icon06.png" alt="html">
-            <img src="../images/main/icon07.png" alt="js">
-            <img src="../images/main/icon08.png" alt="css">
-            <img src="../images/main/icon09.png" alt="라라벨">
-            <img src="../images/main/icon10.png" alt="그누보드">
-          </li>
-        </ul>
-      </div><!-- txt e-->
+      </div>
 
-    </div><!-- list_wrap e-->
+      <div class="ability_right">
+
+        <img src="../images/main/ability.png" alt="어빌리티">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- experience -->
+
+  <section id="experience" class="conwrap">
+
+    <div class="exp_wrap">
+
+      <div class="exp_title">
+        <h3>Experience</h3>
+      </div>
+
+      <div class="exp_img">
+
+        <img src="../images/main/history01.jpg" alt="">
+
+      </div>
+
+      <div class="exp_history">
+
+        <article class="history_item" data-img="../images/main/history01.jpg">
+          <h4>2025</h4>
+
+          <ul>
+            <li>cs업무</li>
+            <li>상세페이지, 카드뉴스 디자인</li>
+            <li>편람, 엑스배너 등 편집물 디자인</li>
+            <li>웹디자인 및 퍼블리싱</li>
+          </ul>
+        </article>
+
+        <article class="history_item" data-img="../images/main/history02.jpg">
+          <h4>2024</h4>
+
+          <ul>
+            <li>부산인터넷방송국 입사</li>
+            <li>(주)에스씨티 아르고스케어 보호자용 알림장 앱 리뉴얼 </li>
+            <li>(주)테렌즈 사내 다크모드 그룹웨어 구축</li>
+            <li>부산IT교육센터 수료</li>
+          </ul>
+        </article>
+
+        <article class="history_item" data-img="../images/main/history03.jpg">
+          <h4>2023</h4>
+
+          <ul>
+            <li>고객응대 및 셀링</li>
+            <li>롯데백화점 애플 프리스비 입사</li>
+            <li>대구한의대 학사 졸업</li>
+          </ul>
+        </article>
+
+        <article class="history_item" data-img="../images/main/history04.jpg">
+          <h4>2022</h4>
+
+          <ul>
+            <li>상세페이지 디자인</li>
+            <li>경북 중소기업 디자인 사업개발지원</li>
+          </ul>
+        </article>
+
+        <article class="history_item" data-img="../images/main/history05.jpg">
+          <h4>2021</h4>
+
+          <ul>
+            <li>'순수한바' 패키지 디자인</li>
+            <li>2021 지역밀착형 연구활동 지원사업 최우수상</li>
+          </ul>
+        </article>
+
+      </div>
+
+    </div>
+
   </section>
 
   <section id="footer">

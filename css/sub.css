@@ -40,7 +40,7 @@ body {
 
 #header {
   margin: 3rem 18rem 0;
-  padding: 2.4rem 3.0rem;
+  padding: 2.0rem 3.0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,10 +206,13 @@ body {
 
 #worklist ol li {
   font-size: 1.7rem;
+  color: #888;
 }
 
 #worklist ol li.on {
-  text-decoration: underline;
+  color: #111;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid #111;
 }
 
 #worklist .work_wrap {
@@ -231,11 +234,28 @@ body {
 
 #worklist .work_wrap li figure {
   width: 100%;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 #worklist .work_wrap li figure img {
   width: 100%;
-  border-radius: 2rem;
+  display: block;
+}
+
+#worklist .work_wrap li figure::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  /* 그라데이션 높이 조절 */
+
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.75),
+      transparent);
 }
 
 #worklist .work_wrap .work_explain {
@@ -273,8 +293,9 @@ body {
 
 #sub_vis .work_info_wrap ul {
   display: flex;
-  gap: 4rem;
+  gap: 2rem 4rem;
   align-items: end;
+  flex-wrap: wrap;
 }
 
 #sub_vis .work_info_wrap ul span {
@@ -322,9 +343,9 @@ body {
 #marquee ul li,
 #marquee ol li {
   padding: 2rem 5rem;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   border-radius: 50px;
-  color: #666;
+  color: #ddd;
 }
 
 #marquee ul li p,
@@ -373,6 +394,15 @@ body {
   border-radius: 2rem;
 }
 
+#design_guide div p {
+  padding-bottom: 1.6rem;
+  line-height: 1.4;
+}
+
+#design_guide div p:last-child {
+  padding-bottom: 0;
+}
+
 .msblue01 {
   background: #0185D7;
 }
@@ -381,10 +411,74 @@ body {
   background: #34BDD0;
 }
 
+.pluto {
+  background: #157FD1;
+}
+
+.sci {
+  background: #475AFF;
+}
+
+.towel {
+  background: #4A4A4A;
+}
+
+.ryun {
+  background: #7216D3;
+}
+
+.school {
+  background: #05B1D9;
+}
+
+.wine {
+  background: #000221;
+}
+
+.skin {
+  background: #316CAE;
+}
+
+.perfume {
+  background: #A80017;
+}
+
+.tshirt {
+  background: #B88D19;
+}
+
+.cream {
+  background: #000221;
+}
+
+.good {
+  background: #0183E1;
+}
+
+.hoyukjung {
+  background: #FAA433;
+}
+
+.cremonpink01 {
+  background: #E83904;
+}
+
+.cremonpink02 {
+  background: #e2a18b;
+}
+
+.jayeon_green {
+  background: #009047;
+}
+
+.jayeon_brown {
+  background: #D5B89F;
+}
+
 #design_guide div h4 {
   display: inline-block;
   margin-bottom: 4rem;
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 600;
   color: #fff;
 }
@@ -411,6 +505,11 @@ body {
   display: grid;
   place-items: center;
   border-radius: 2rem;
+  padding: 7rem 4rem;
+}
+
+#design_guide ul li:first-child img {
+  width: 100%;
 }
 
 #design_guide ul li:nth-child(2) {
@@ -428,6 +527,7 @@ body {
 
 #design_guide ul li:last-child img {
   width: 100%;
+  height: 100%;
 }
 
 #main_design ul {
@@ -487,37 +587,42 @@ body {
 
 #design_guide.etc div img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-#design_guide ul {
+#design_guide.etc ul {
   width: calc((100% - 3rem) / 2);
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
 
-#design_guide ul li {
+#design_guide.etc ul li {
   width: calc((100% - 3rem) / 2);
   border-radius: 2rem;
 }
 
-#design_guide ul li:first-child {
+#design_guide.etc ul li:first-child {
   background-color: #f8f8f8;
   display: grid;
   place-items: center;
   border-radius: 2rem;
 }
 
-#design_guide ul li:nth-child(2) {
+#design_guide.etc ul li:nth-child(2) {
   padding: 7rem 4rem;
+  display: flex;
+  align-items: center;
 }
 
-#design_guide ul li:nth-child(2) img {
+#design_guide.etc ul li:nth-child(2) img {
   width: 70%;
 }
 
-#design_guide ul li:last-child {
-  padding: 9rem 6rem;
+#design_guide.etc ul li:last-child {
+  padding: 6rem;
   width: 100%;
   border-radius: 2rem;
   background-color: #f8f8f8;
@@ -525,7 +630,7 @@ body {
 
 #design_guide.etc h4 {
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-size: 3.6rem;
   font-weight: 600;
 }
@@ -671,6 +776,24 @@ body {
   font-family: 'ProstoOne', serif;
 }
 
+#main_etc .img_list {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#main_etc .img_list li {
+  width: calc((100% - 10rem) / 3);
+  text-align: center;
+}
+
+#main_etc .img_list li img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /**main_detail**/
 
 #main_detail {
@@ -805,6 +928,10 @@ body {
   font-size: 3rem;
 }
 
+#profile {
+  padding: 14rem 0;
+}
+
 #profile .top {
   display: flex;
   gap: 10rem;
@@ -869,6 +996,143 @@ body {
   gap: 1.2rem;
 }
 
+/*****faq*****/
+#faq div {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+#faq div h1 {
+  font-family: 'ProstoOne', serif;
+  font-size: 4rem;
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+#faq ul {
+  margin-top: 4rem;
+}
+
+#faq ul li {
+  margin-bottom: 2.0rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#faq ul li h2 {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#faq ul li h2::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background: url(../images/faq/arrow.png) no-repeat center;
+  width: 20px;
+  height: 10px;
+  transition: 0.3s;
+}
+
+#faq ul li.on h2::before {
+  transform: rotate(180deg);
+}
+
+#faq ul li p {
+  display: none;
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+#faq ul li.on {
+  background-color: #f8f8f8;
+}
+
+#faq ul li.on p {
+  display: block;
+}
+
+
+/****introduce****/
+#introduce .title_wrap {
+  margin: 20rem 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top_text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#introduce h1,
+#introduce h2 {
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #111;
+}
+
+#introduce h1 {
+  font-weight: 400;
+}
+
+.typing {
+  position: relative;
+}
+
+/* 커서 */
+.typing::after {
+  content: '|';
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#introduce ul {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  border-bottom: 1px solid #111;
+}
+
+#introduce ul li {
+  flex: 1;
+  width: calc((100% - 12rem) / 7);
+}
+
+#introduce ul li img {
+  width: 100%;
+}
+
+#introduce .banner {
+  background: url(../images/faq/banner.jpg) no-repeat center / cover;
+  color: #fff;
+  height: 586px;
+  text-align: center;
+  font-size: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -881,6 +1145,7 @@ body {
   justify-content: space-between;
   padding: 90px 180px;
   background-color: #E24101;
+  gap: 5rem;
 }
 
 #footer .right,
@@ -936,4 +1201,272 @@ body {
   color: #Fff;
   font-size: 1.7rem;
   font-family: 'ProstoOne', serif;
+}
+
+
+
+
+
+
+
+/*내소개쪽*/
+/* =========================
+   VISUAL
+========================= */
+
+#visual {
+  min-height: 900px;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  background:
+    url("../images/main/moto.png") no-repeat center bottom;
+
+  background-size: 740px auto;
+}
+
+#visual .visual_txt {
+  width: 430px;
+  position: relative;
+  z-index: 2;
+}
+
+#visual .visual_txt h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  word-break: keep-all;
+}
+
+#visual .contact {
+  margin-top: 15rem;
+}
+
+#visual .contact strong {
+  display: block;
+  margin-bottom: 2rem;
+
+  color: #E24101;
+  font-size: 1.4rem;
+  font-family: 'ProstoOne';
+}
+
+#visual .contact a {
+  display: block;
+  color: #111;
+
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+#visual .visual_info {
+  width: 220px;
+
+  text-align: right;
+
+  position: relative;
+  z-index: 2;
+}
+
+#visual .visual_info li {
+  list-style: none;
+}
+
+#visual .visual_info li+li {
+  margin-top: 8rem;
+}
+
+#visual .visual_info strong {
+  display: block;
+
+  font-size: 5rem;
+  line-height: 1;
+
+  font-family: 'ProstoOne';
+}
+
+#visual .visual_info span {
+  display: block;
+  margin-top: 1rem;
+
+  color: #999;
+  font-size: 1.5rem;
+}
+
+
+
+/* =========================
+   ABILITY
+========================= */
+
+#ability {
+  background: #efefef;
+}
+
+#ability .conwrap {
+  padding: 14rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#ability .ability_left {
+  display: flex;
+  gap: 12rem;
+}
+
+#ability .ability_title {
+  margin-bottom: 6rem;
+
+  font-size: 1.6rem;
+  font-family: 'ProstoOne';
+
+  color: #E24101;
+}
+
+#ability .ability_txt {
+  display: flex;
+  flex-direction: column;
+}
+
+#ability .fill_text {
+  margin: 0;
+
+  font-size: 7rem;
+  line-height: 1;
+
+  font-family: 'ProstoOne';
+
+  color: #d0d0d0;
+
+  background-image: linear-gradient(to right,
+      #E24101 0%,
+      #d0d0d0 0%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#ability .fill_text+.fill_text {
+  margin-top: 1.5rem;
+}
+
+#ability .ability_right img {
+  width: 100%;
+}
+
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+#experience {
+  padding: 0;
+}
+
+#experience .exp_wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: relative;
+
+  padding-top: 14rem;
+}
+
+#experience .exp_wrap::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 33.333%;
+
+  width: 1px;
+  height: 100%;
+
+  background: #ddd;
+}
+
+#experience .exp_wrap::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 66.666%;
+
+  width: 1px;
+  height: 100%;
+
+  background: #ddd;
+}
+
+/* 왼쪽 */
+#experience .exp_title {
+  position: sticky;
+  top: 12rem;
+
+  height: fit-content;
+
+  padding-right: 6rem;
+}
+
+#experience .exp_title h3 {
+  font-size: 7rem;
+  line-height: 1;
+
+  font-family: 'ProstoOne';
+}
+
+/* 가운데 */
+#experience .exp_img {
+  position: sticky;
+  top: 12rem;
+
+  height: fit-content;
+
+  padding: 0 4rem;
+}
+
+#experience .exp_img img {
+  width: 100%;
+  aspect-ratio: 415 / 457;
+
+  object-fit: cover;
+  display: block;
+
+  transition: opacity .15s ease;
+}
+
+/* 오른쪽 */
+#experience .exp_history {
+  padding-left: 6rem;
+}
+
+#experience .history_item {
+  min-height: 50vh;
+}
+
+#experience .history_item h4 {
+  margin-bottom: 4rem;
+
+  font-size: 5rem;
+  line-height: 1;
+
+  font-family: 'ProstoOne';
+}
+
+#experience .history_item ul {
+  list-style: none;
+}
+
+#experience .history_item li {
+  line-height: 2;
+  color: #555;
 }

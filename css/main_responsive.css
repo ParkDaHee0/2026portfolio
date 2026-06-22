@@ -1,14 +1,31 @@
-/* ============================================================
-   RESPONSIVE.CSS — 포트폴리오 반응형
-   모든 디바이스 대응: PC(1280+) / 태블릿(768~1279) / 모바일(~767)
-   ============================================================ */
+/* ================================================
+   RESPONSIVE — 태블릿 (1500px 이하)
+================================================ */
+@media (max-width:1500px) {
+  html {
+    font-size: 56%;
+  }
 
-/* ── 태블릿 (768px ~ 1279px) ─────────────────────────────── */
-@media (max-width: 1279px) {
+  #works {
+    background-color: #f8f8f8;
+    padding: 15rem 0 12rem;
+  }
+
+  #profile .top {
+    flex-wrap: wrap;
+  }
+
+  #profile .left_wrap {
+    width: 100%;
+  }
+
+  #profile .right_wrap {
+    width: 100%;
+  }
 
   /* ---- 공통 ---- */
   .conwrap {
-    margin: 10rem 6rem;
+    margin: 10rem 10rem;
   }
 
   /* ---- intro ---- */
@@ -42,18 +59,12 @@
   }
 
   .scrolled #logo {
-    left: 140px;
+    top: 13px;
+    left: 112px;
+    transform: scale(0.3);
   }
 
   /* ---- works ---- */
-  .carousel-wrap {
-    height: 560px;
-  }
-
-  .card-item {
-    width: 320px;
-    height: 427px;
-  }
 
   /* ---- profile ---- */
   #profile .list_wrap {
@@ -66,12 +77,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 
-  .my .card {
-    min-width: 240px;
-    height: 320px;
-  }
+  /* .my .card {
+    min-width: auto;
+    height: auto;
+  } */
 
   #profile .top {
     flex-direction: column;
@@ -93,6 +105,15 @@
   }
 
   /* ---- before-after ---- */
+  #footer .left p {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  #footer .left p:nth-of-type(2) {
+    color: #ED8156;
+  }
+
   .laptop {
     width: 640px;
     height: 376px;
@@ -113,7 +134,31 @@
   /* ---- etc ---- */
   #etc {
     margin-top: 15rem;
+    gap: 0;
+    display: block;
+  }
+
+  #etc ul {
+    display: flex;
     gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #etc ul:last-child {
+    margin-bottom: 0;
+  }
+
+  #etc ul li {
+    width: calc((100% - 2rem) / 2);
+  }
+
+  #etc .line02 {
+    transform: translateY(0);
+  }
+
+  #etc ul li:nth-child(1) {
+    margin-bottom: 0;
   }
 
   /* ---- location ---- */
@@ -139,7 +184,7 @@
   }
 
   #footer .left ul {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
     gap: 3rem;
   }
 }
@@ -163,7 +208,6 @@
   }
 
   #logo {
-    width: 80%;
     text-align: center;
   }
 
@@ -184,6 +228,7 @@
   }
 
   #toggle.on .circle {
+    top: 3px;
     transform: translateX(32px);
   }
 
@@ -195,8 +240,8 @@
   /* 스크롤 후 로고 축소 위치 조정 */
   .scrolled #logo {
     left: 50px;
-    top: 8px;
-    transform: scale(0.18);
+    top: 14px;
+    transform: scale(0.4);
     transform-origin: left center;
   }
 
@@ -234,7 +279,6 @@
   }
 
   .works-title {
-    font-size: 3.2rem;
     margin-bottom: 2rem;
   }
 
@@ -245,12 +289,9 @@
     padding: 0 2rem;
   }
 
-  .works-tabs button {
-    font-size: 1.4rem;
-  }
 
   .carousel-wrap {
-    height: 440px;
+    height: 500px;
   }
 
   .card-item {
@@ -259,39 +300,30 @@
     border-radius: 14px;
   }
 
-  .slide-info h3 {
-    font-size: 1.6rem;
-  }
 
-  .slide-info p {
-    font-size: 1.2rem;
-  }
 
   /* ---- profile ---- */
+  .m_profile {
+    display: block;
+  }
+
+  .m_profile img {
+    width: 100%;
+  }
+
   #profile .list_wrap {
     flex-direction: column;
     gap: 4rem;
   }
 
   .my {
+    display: none;
     position: static;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
   }
 
-  .my .card {
-    width: 100%;
-    max-width: 280px;
-    min-width: unset;
-    height: 360px;
-  }
-
-  .my span,
-  .my b,
-  .my p {
-    font-size: 2rem;
-  }
 
   #profile .top {
     flex-direction: column;
@@ -308,18 +340,6 @@
     margin-bottom: 4rem;
   }
 
-  #profile .tit h3 {
-    font-size: 2rem;
-  }
-
-  #profile .tit em {
-    font-size: 1.4rem;
-  }
-
-  #profile .list li:nth-child(2) div p {
-    font-size: 1.5rem;
-  }
-
   .bottom_wrap {
     flex-direction: column;
     gap: 2rem;
@@ -331,17 +351,12 @@
   }
 
   .bottom_wrap li:nth-child(2) img {
-    width: 40px;
     height: 40px;
   }
 
   /* ---- contact ---- */
   #contact {
     height: 250vh;
-  }
-
-  .word {
-    font-size: 3.8rem;
   }
 
   .contact-img {
@@ -351,9 +366,13 @@
 
   /* ---- before-after ---- */
   #before-after {
-    height: 250vh;
+    height: 180vh;
     margin-bottom: -200px;
   }
+
+  /* .ba-track {
+    gap: 30rem;
+  } */
 
   .ba-panel {
     flex-direction: column;
@@ -395,26 +414,28 @@
 
   #etc ul {
     width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #etc ul li {
+    width: 100%;
   }
 
   #etc .line02 {
     transform: translateY(0);
   }
 
-  #etc ul li .txt h3 {
-    font-size: 1.8rem;
+  #etc ul li .txt figure {
+    width: 30px;
+    height: 30px;
   }
 
-  #etc ul li .txt p {
-    font-size: 1.3rem;
+  #etc ul li .txt figure img {
+    width: 100%;
   }
 
   .etc-more {
     margin-top: 4rem;
-  }
-
-  .etc-more a {
-    font-size: 1.8rem;
   }
 
   /* ---- location ---- */
@@ -481,13 +502,7 @@
     font-size: 48%;
   }
 
-  #logo .title {
-    font-size: 3.6rem;
-  }
 
-  .word {
-    font-size: 3rem;
-  }
 
   .laptop {
     width: 290px;

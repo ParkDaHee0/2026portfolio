@@ -88,55 +88,264 @@ togglebtn.addEventListener('click', () => {
 });
 
 // ===== WORKS =====
-const slides = [
-  { img: '../images/main/work_golf.jpg', title: '파크골프 예약 어플리케이션', sub: 'Mobile / 기여도 100%', label: '파크골프 예약 어플리케이션', href: '../sub/sub_00.html' },
-  { img: '../images/main/work_esim.jpg', title: 'eSIM 구매 어플리케이션', sub: 'Mobile / 기여도 100%', label: 'eSIM 구매 어플리케이션', href: '#' },
-  { img: 'images/main/work_tire.jpg', title: '순환자원 수거 어플리케이션', sub: 'Mobile / 기여도 100%', label: '순환자원 수거 어플리케이션', href: '#' },
-  { img: 'images/main/work_pluto.jpg', title: '그룹웨어 다크모드 UI', sub: 'Web / 기여도 60%', label: '그룹웨어 다크모드 UI', href: '#' },
-  { img: 'images/main/work_pig.jpg', title: '목촌돼지국밥 웹사이트', sub: 'Web / 서브기여도 90%', label: '목촌돼지국밥', href: '#' },
-  { img: 'images/main/work_ybglobal.jpg', title: 'YB글로벌 웹사이트', sub: 'Web / 서브기여도 100%', label: 'YB글로벌', href: '#' },
-  { img: 'images/main/work_nature.jpg', title: '자연농산 웹사이트', sub: 'Web / 기여도 100%', label: '자연농산', href: '#' },
-  { img: 'images/main/work_cremon.jpg', title: '끄레몽 웹사이트', sub: 'Web / 기여도 100%', label: '끄레몽', href: '#' },
+const allSlides = [
+
+  {
+    img: '../images/main/work_golf.jpg',
+    title: '파크골프 예약 어플리케이션',
+    sub: 'Mobile / 기여도 100%',
+    category: 'app',
+    href: '../sub/sub_msgolf.html'
+  },
+
+  {
+    img: '../images/main/work_esim.jpg',
+    title: 'eSIM 구매 어플리케이션',
+    sub: 'Mobile / 기여도 100%',
+    category: 'app',
+    href: 'https://www.figma.com/design/kcdXorbcxIXcRCc6nB9tR3/%EC%9D%B4%EC%8B%AC%EB%AA%A8%EC%95%84?node-id=0-1&t=SBYiCd4sfXuJcRAG-1'
+  },
+
+  {
+    img: '../images/main/work_cremon.jpg',
+    title: '끄레몽',
+    sub: 'Web / 기여도 100%',
+    category: 'web',
+    href: '../sub/sub_cremon.html'
+  },
+
+  {
+    img: '../images/main/work_nature.jpg',
+    title: '자연농산',
+    sub: 'Web / 기여도 100%',
+    category: 'web',
+    href: '../sub/sub_jayeon.html'
+  },
+
+  {
+    img: '../images/main/work_ybglobal.jpg',
+    title: 'YB글로벌',
+    sub: 'Web / 서브기여도 100%',
+    category: 'web',
+    href: 'http://ybglobal.kr/'
+  },
+
+  {
+    img: '../images/main/work_glts.jpg',
+    title: 'GLTS',
+    sub: 'Web / 서브기여도 100%',
+    category: 'web',
+    href: 'http://glts.kr/'
+  },
+
+  {
+    img: '../images/main/work_pig.jpg',
+    title: '목촌돼지국밥',
+    sub: 'Web / 서브기여도 95%',
+    category: 'web',
+    href: 'http://xn--3e0bj8jq5frsbs97awue.kr/'
+  },
+
+  {
+    img: 'images/main/work_pluto.jpg',
+    title: 'PLUTO',
+    sub: 'Web / 기여도 30%',
+    category: 'web',
+    href: '../sub/sub_pluto.html'
+  },
+
+  {
+    img: 'images/main/work_wine.jpg',
+    title: '와인코리아',
+    sub: 'Web / 기여도 90%',
+    category: 'web',
+    href: 'https://parkdahee0.github.io/portfolio_02/index.html'
+  },
+
+  {
+    img: 'images/main/work_jump.jpg',
+    title: '줄넘기 키오스크',
+    sub: 'Kiosk / 기여도 100%',
+    category: 'etc',
+    href: 'https://www.figma.com/design/beeLPvABzmOrxt3Dk9nUbj/%ED%98%81%EC%8B%A0%ED%94%8C%EB%9E%AB%ED%8F%BC-%EA%B3%BC%EC%A0%9C---%EC%A4%84%EB%84%98%EA%B8%B0-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC?node-id=0-1&t=ToGg7qGOr5VbwhN5-1'
+  },
+
+  {
+    img: 'images/main/work_ms_m.jpg',
+    title: 'MS파크골프 모바일',
+    sub: 'App / 기여도 100%',
+    category: 'app',
+    href: 'https://www.figma.com/design/iQCYYfN7YNDQqo3Gi5oAls/MS%EA%B3%A8%ED%94%84?node-id=0-1&t=ztIh6nD8l7CVhHWY-1'
+  },
+
+  {
+    img: 'images/main/work_strike.jpg',
+    title: 'STRIKE',
+    sub: 'App / 기여도 25%',
+    category: 'app',
+    href: 'https://notefolio.net/dpurpose20/412283'
+  },
+
+  {
+    img: 'images/main/work_ganjik.jpg',
+    title: '간직하다',
+    sub: 'App / 기여도 50%',
+    category: 'app',
+    href: 'https://notefolio.net/dpurpose20/409727'
+  },
+
+  {
+    img: 'images/main/work_sci.jpg',
+    title: '국립부산과학관 수어서비스',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_sci.html'
+  },
+
+  {
+    img: 'images/main/work_towel.jpg',
+    title: '동진수건',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_towel.html'
+  },
+
+  {
+    img: 'images/main/work_ryun.jpg',
+    title: '시간과 리듬 륜',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_ryun.html'
+  },
+
+  {
+    img: 'images/main/work_school.jpg',
+    title: '우리학교를 지켜라',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_school.html'
+  },
+
+  {
+    img: 'images/main/etc05.jpg',
+    title: '와인코리아',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_wine.html'
+  },
+
+  {
+    img: 'images/main/etc06.jpg',
+    title: '스킨',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_skin.html'
+  },
+
+  {
+    img: 'images/main/etc04.jpg',
+    title: '향수',
+    sub: '상세페이지 / 기여도 100%',
+    category: 'detail',
+    href: '../sub/sub_detail_perfume.html'
+  },
+
+  {
+    img: 'images/main/etc02.jpg',
+    title: 'LG에너지솔루션',
+    sub: '동아리 티셔츠 / 기여도 100%',
+    category: 'etc',
+    href: '../sub/sub_lg.html'
+  },
+
+  {
+    img: 'images/main/etc03.jpg',
+    title: '라파농',
+    sub: '화장품 패키지 / 기여도 100%',
+    category: 'etc',
+    href: '../sub/sub_rafanon.html'
+  },
+
+  {
+    img: 'images/main/work_goodstep.jpg',
+    title: '바른걸음연구소',
+    sub: '카드뉴스 / 기여도 100%',
+    category: 'etc',
+    href: '../sub/sub_etc_goodstep.html'
+  },
+
+  {
+    img: 'images/main/work_hoyukjung.jpg',
+    title: '호육정',
+    sub: '피켓 / 기여도 100%',
+    category: 'etc',
+    href: '../sub/sub_etc.html'
+  }
+
 ];
 
-const CARD_W = 400;
-const CARD_H = 533;
-const GAP = 250;
-const STEP = CARD_W + GAP;
+let slides = allSlides.filter(
+  item => item.category === 'web'
+);
+
 
 let current = 0;
 const track = document.getElementById('track');
 const labelEl = document.getElementById('works-label');
 const cards = [];
 
-slides.forEach((s, i) => {
-  const el = document.createElement('div');
-  el.className = 'card-item';
-  el.innerHTML = `
-    <img src="${s.img}" alt="${s.title}">
-    <div class="slide-info">
-      <h3>${s.title}</h3>
-      <p>${s.sub}</p>
-    </div>
-  `;
-  el.addEventListener('click', () => {
-    if (i === current) {
-      location.href = s.href;
-    } else {
-      current = i;
-      render();
-    }
+function createSlides() {
+
+  track.innerHTML = '';
+  cards.length = 0;
+
+  slides.forEach((s, i) => {
+
+    const el = document.createElement('div');
+
+    el.className = 'card-item';
+
+    el.innerHTML = `
+      <img src="${s.img}" alt="${s.title}">
+      <div class="slide-info">
+        <h3>${s.title}</h3>
+        <p>${s.sub}</p>
+      </div>
+    `;
+
+    el.addEventListener('click', () => {
+      if (i === current) {
+        location.href = s.href;
+      } else {
+        current = i;
+        render();
+      }
+    });
+
+    track.appendChild(el);
+    cards.push(el);
   });
-  track.appendChild(el);
-  cards.push(el);
-});
+
+  render();
+}
 
 function render() {
+
+  if (!cards.length) return;
   const total = slides.length;
-  // carousel-wrap의 실제 너비 기준으로 중앙 계산
+
   const carouselWrap = document.querySelector('.carousel-wrap');
-  const trackW = carouselWrap ? carouselWrap.offsetWidth : window.innerWidth;
-  const centerX = trackW / 2 - CARD_W / 2;
+  const trackW = carouselWrap
+    ? carouselWrap.offsetWidth
+    : window.innerWidth;
+
+  const cardWidth = cards[0].offsetWidth;
+  const cardHeight = cards[0].offsetHeight;
+
+  const GAP = window.innerWidth <= 767 ? 40 : 250;
+  const STEP = cardWidth + GAP;
+
+  const centerX = trackW / 2 - cardWidth / 2;
   const RADIUS = 3000;
 
   cards.forEach((card, i) => {
@@ -169,16 +378,19 @@ function render() {
   // nav-wrap을 active 카드 바로 아래에 배치
   const navWrap = document.getElementById('navWrap');
   const activeCard = cards[current];
-  const cardBottom = parseFloat(activeCard.style.top) + CARD_H;
-  const cardCenterX = parseFloat(activeCard.style.left) + CARD_W / 2;
+  const cardBottom = parseFloat(activeCard.style.top) + cardHeight;
+  const cardCenterX = parseFloat(activeCard.style.left) + cardWidth / 2;
   navWrap.style.position = 'absolute';
   navWrap.style.top = (cardBottom + 20) + 'px';
   navWrap.style.left = cardCenterX + 'px';
   navWrap.style.transform = 'translateX(-50%)';
 }
 
-render();
+window.addEventListener('load', () => {
+  createSlides();
+});
 window.addEventListener('resize', render);
+
 
 document.getElementById('prevBtn').addEventListener('click', () => {
   current = (current - 1 + slides.length) % slides.length;
@@ -191,13 +403,25 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 // 탭
 document.querySelectorAll('.works-tabs button').forEach(btn => {
+
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.works-tabs button').forEach(b => b.classList.remove('active'));
+
+    document
+      .querySelectorAll('.works-tabs button')
+      .forEach(b => b.classList.remove('active'));
+
     btn.classList.add('active');
-    document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
-    document.getElementById('tab-' + btn.dataset.tab).style.display = 'block';
-    if (btn.dataset.tab === 'web') render();
+
+    slides = allSlides.filter(
+      item => item.category === btn.dataset.tab
+    );
+
+    current = 0;
+
+    createSlides();
+
   });
+
 });
 
 // ===== CONTACT =====
@@ -264,6 +488,9 @@ const afterLaptop = document.querySelector('.after-laptop');
 const beforeImg = document.getElementById('beforeImg');
 const afterImg = document.getElementById('afterImg');
 
+const beforeScreen = document.getElementById('beforeScreen');
+const afterScreen = document.getElementById('afterScreen');
+
 window.addEventListener('scroll', () => {
   const rect = baSection.getBoundingClientRect();
   const sectionH = baSection.offsetHeight;
@@ -291,8 +518,12 @@ window.addEventListener('scroll', () => {
   // before 이미지: 랩탑 올라온 후(0.22)부터 스크롤
   if (beforeLaptop.classList.contains('show') && scrolled > 0.22 && scrolled < 0.48) {
     const imgProgress = (scrolled - 0.22) / (0.48 - 0.22);
-    const imgH = beforeImg.naturalHeight * (770 / beforeImg.naturalWidth);
-    const maxScroll = imgH - 480;
+    const imgH =
+      beforeImg.naturalHeight *
+      (beforeScreen.offsetWidth / beforeImg.naturalWidth);
+
+    const maxScroll =
+      imgH - beforeScreen.offsetHeight;
     beforeImg.style.top = `-${imgProgress * maxScroll}px`;
   } else if (scrolled <= 0.22) {
     beforeImg.style.top = '0px';
@@ -301,8 +532,12 @@ window.addEventListener('scroll', () => {
   // after 이미지: 랩탑 올라온 후(0.75)부터 스크롤
   if (afterLaptop.classList.contains('show') && scrolled > 0.75) {
     const imgProgress = (scrolled - 0.75) / (1.0 - 0.75);
-    const imgH = afterImg.naturalHeight * (770 / afterImg.naturalWidth);
-    const maxScroll = imgH - 480;
+    const imgH =
+      afterImg.naturalHeight *
+      (afterScreen.offsetWidth / afterImg.naturalWidth);
+
+    const maxScroll =
+      imgH - afterScreen.offsetHeight;
     afterImg.style.top = `-${imgProgress * maxScroll}px`;
   } else if (scrolled <= 0.75) {
     afterImg.style.top = '0px';
