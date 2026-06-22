@@ -91,7 +91,7 @@ togglebtn.addEventListener('click', () => {
 const allSlides = [
 
   {
-    img: '../images/main/work_golf.jpg',
+    img: 'images/main/work_golf.jpg',
     title: '파크골프 예약 어플리케이션',
     sub: 'Mobile / 기여도 100%',
     category: 'app',
@@ -99,7 +99,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_esim.jpg',
+    img: 'images/main/work_esim.jpg',
     title: 'eSIM 구매 어플리케이션',
     sub: 'Mobile / 기여도 100%',
     category: 'app',
@@ -107,7 +107,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_cremon.jpg',
+    img: 'images/main/work_cremon.jpg',
     title: '끄레몽',
     sub: 'Web / 기여도 100%',
     category: 'web',
@@ -115,7 +115,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_nature.jpg',
+    img: 'images/main/work_nature.jpg',
     title: '자연농산',
     sub: 'Web / 기여도 100%',
     category: 'web',
@@ -123,7 +123,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_ybglobal.jpg',
+    img: 'images/main/work_ybglobal.jpg',
     title: 'YB글로벌',
     sub: 'Web / 서브기여도 100%',
     category: 'web',
@@ -131,7 +131,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_glts.jpg',
+    img: 'images/main/work_glts.jpg',
     title: 'GLTS',
     sub: 'Web / 서브기여도 100%',
     category: 'web',
@@ -139,7 +139,7 @@ const allSlides = [
   },
 
   {
-    img: '../images/main/work_pig.jpg',
+    img: 'images/main/work_pig.jpg',
     title: '목촌돼지국밥',
     sub: 'Web / 서브기여도 95%',
     category: 'web',
