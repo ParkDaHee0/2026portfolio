@@ -92,9 +92,9 @@ const allSlides = [
 
   {
     img: 'images/main/work_golf.jpg',
-    title: '파크골프 예약 어플리케이션',
-    sub: 'Mobile / 기여도 100%',
-    category: 'app',
+    title: '명승파크골프',
+    sub: 'Web / 기여도 100%',
+    category: 'web',
     href: '/2026portfolio/sub/sub_msgolf.html'
   },
 

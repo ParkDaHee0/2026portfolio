@@ -378,7 +378,8 @@ body.scrolled #logo .title {
 /*works*/
 /*works*/
 #works {
-  padding: 15rem 0 0;
+  padding: 15rem 0;
+  background-color: #f8f8f8;
 }
 
 .works-title {
