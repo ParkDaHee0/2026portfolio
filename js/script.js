@@ -195,6 +195,22 @@ const allSlides = [
   },
 
   {
+    img: 'images/main/work_didone.jpg',
+    title: 'DIDONE',
+    sub: 'App / 기여도 50%',
+    category: 'app',
+    href: 'https://notefolio.net/dpurpose20/411364'
+  },
+
+  {
+    img: 'images/main/work_moram.jpg',
+    title: 'MORAM',
+    sub: 'App / 기여도 50%',
+    category: 'app',
+    href: 'https://notefolio.net/dpurpose20/411362'
+  },
+
+  {
     img: 'images/main/work_sci.jpg',
     title: '국립부산과학관 수어서비스',
     sub: '상세페이지 / 기여도 100%',

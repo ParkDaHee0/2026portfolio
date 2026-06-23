@@ -943,9 +943,21 @@ body.scrolled #logo .title {
 
 
 #etc ul li>figure img {
+  position: relative;
   width: 100%;
   border-radius: 2rem;
   display: block;
+}
+
+#etc ul li>figure::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  border-radius: 0 0 2rem 2rem;
 }
 
 #etc ul li .txt figure {
