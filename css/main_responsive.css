@@ -204,7 +204,7 @@
   /* ---- intro ---- */
   #intro .left,
   #intro .right {
-    width: 22%;
+    width: 32%;
   }
 
   #logo {
@@ -286,7 +286,7 @@
 
   .works-tabs {
     gap: 1.6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
     padding: 0 2rem;
   }

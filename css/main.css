@@ -978,9 +978,10 @@ body.scrolled #logo .title {
   gap: 2rem;
   justify-content: center;
   margin-top: 7rem;
+  align-items: center;
 }
 
-.etc-more a {
+.etc-more p {
   display: block;
   font-family: 'ProstoOne', serif;
   font-size: 2rem;

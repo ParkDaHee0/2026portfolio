@@ -728,9 +728,10 @@ body {
   gap: 2rem;
   justify-content: center;
   margin-top: 7rem;
+  align-items: center;
 }
 
-.back a {
+.back p {
   display: block;
   font-family: 'ProstoOne', serif;
   font-size: 2rem;

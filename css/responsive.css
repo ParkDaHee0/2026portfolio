@@ -171,6 +171,14 @@
     margin-bottom: 5rem;
   }
 
+  #design_guide div h4 {
+    margin-bottom: 2rem;
+  }
+
+  #design_guide.etc h4 {
+    font-size: 2.8rem;
+  }
+
   /* ------------------
       DETAIL
   ------------------ */
@@ -181,6 +189,7 @@
 
   #sub_vis .work_info_wrap {
     display: block;
+    margin-bottom: 3rem;
   }
 
   #marquee ul li,
@@ -256,6 +265,10 @@
   }
 
   .first {
+    padding: 7rem 0;
+  }
+
+  .last {
     padding: 7rem 0;
   }
 
@@ -368,9 +381,33 @@
   }
 
 
-  /* #sub_vis .work_info_wrap ul {
-    justify-content: space-between;
-  } */
+  #visual .visual_txt h2 {
+    font-size: 3rem;
+  }
+
+  #visual .visual_info strong {
+    font-size: 3rem;
+  }
+
+  #ability .conwrap {
+    padding: 8rem 0;
+  }
+
+  #ability .ability_title {
+    margin-bottom: 0;
+  }
+
+  #ability .fill_text {
+    font-size: 5rem;
+  }
+
+  #experience .exp_title h3 {
+    font-size: 5rem;
+  }
+
+  #experience .history_item h4 {
+    font-size: 3rem;
+  }
 
   #sub_vis .work_info h2 {
     font-size: 3.2rem;
@@ -393,8 +430,12 @@
   }
 
   #design_guide div h4 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
+  }
+
+  #design_guide.etc h4 {
+    font-size: 2.2rem;
   }
 
   #main_design ul {
@@ -436,6 +477,7 @@
 
   #faq ul li h2 {
     font-size: 16px;
+    padding-right: 40px;
   }
 
   #marquee {
@@ -477,5 +519,6 @@
 
   #main_design ul h3 {
     font-size: 2.5rem;
+    margin-top: 0;
   }
 }
