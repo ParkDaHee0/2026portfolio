@@ -81,7 +81,7 @@
   }
 
   #design_guide div {
-    padding: 6rem;
+    padding: 5rem;
   }
 
   #design_guide ul {
@@ -362,13 +362,18 @@
     width: 100%;
   }
 
+  #worklist .work_wrap .work_explain {
+    left: 3rem;
+    right: 3rem;
+  }
+
 
   /* #sub_vis .work_info_wrap ul {
     justify-content: space-between;
   } */
 
   #sub_vis .work_info h2 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
 
@@ -426,5 +431,51 @@
 
   #sub_design ul:last-child {
     margin-bottom: 0;
+  }
+
+
+  #faq ul li h2 {
+    font-size: 16px;
+  }
+
+  #marquee {
+    overflow: hidden;
+  }
+
+  #marquee ul,
+  #marquee ol {
+    display: flex;
+    gap: 2.4rem;
+    width: max-content;
+    animation: marquee-left var(--marquee-duration, 20s) linear infinite;
+  }
+
+  #marquee ul {
+    margin-bottom: 2rem;
+  }
+
+  #marquee ul li,
+  #marquee ol li {
+    padding: 1rem 3rem;
+  }
+
+  #marquee ul li p,
+  #marquee ol li p {
+    font-size: 1.8rem;
+  }
+
+  #marquee ul li.on,
+  #marquee ol li.on {
+    padding: 1rem 3rem;
+  }
+
+  #design_guide ul li:first-child,
+  #design_guide ul li:nth-child(2),
+  #design_guide.etc ul li:nth-child(2) {
+    padding: 3rem;
+  }
+
+  #main_design ul h3 {
+    font-size: 2.5rem;
   }
 }

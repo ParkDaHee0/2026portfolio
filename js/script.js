@@ -358,7 +358,7 @@ function render() {
   const cardWidth = cards[0].offsetWidth;
   const cardHeight = cards[0].offsetHeight;
 
-  const GAP = window.innerWidth <= 767 ? 40 : 250;
+  const GAP = window.innerWidth <= 767 ? 90 : 250;
   const STEP = cardWidth + GAP;
 
   const centerX = trackW / 2 - cardWidth / 2;

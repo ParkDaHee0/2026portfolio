@@ -225,10 +225,11 @@
   #toggle .circle {
     width: 32px;
     height: 32px;
+    top: 4px;
   }
 
   #toggle.on .circle {
-    top: 3px;
+    top: 4px;
     transform: translateX(32px);
   }
 
@@ -239,8 +240,8 @@
 
   /* 스크롤 후 로고 축소 위치 조정 */
   .scrolled #logo {
-    left: 50px;
-    top: 14px;
+    left: 40px;
+    top: 12px;
     transform: scale(0.4);
     transform-origin: left center;
   }
@@ -258,7 +259,7 @@
   }
 
   .header nav {
-    padding: 1.6rem 0;
+    padding: 1.2rem 0;
     justify-content: flex-end;
   }
 
@@ -277,6 +278,7 @@
   #works {
     padding: 10rem 0 0;
   }
+
 
   .works-title {
     margin-bottom: 2rem;
@@ -354,6 +356,10 @@
     height: 40px;
   }
 
+  .word {
+    font-size: 3.5rem;
+  }
+
   /* ---- contact ---- */
   #contact {
     height: 250vh;
@@ -419,6 +425,11 @@
 
   #etc ul li {
     width: 100%;
+  }
+
+  #etc ul li .txt {
+    left: 3rem;
+    right: 3rem;
   }
 
   #etc .line02 {
