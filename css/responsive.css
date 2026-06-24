@@ -536,4 +536,8 @@
   #footer .right ul p {
     font-size: 1.5rem;
   }
+
+  #design_guide div {
+    padding: 3rem;
+  }
 }
