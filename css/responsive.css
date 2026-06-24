@@ -220,32 +220,6 @@
   }
 }
 
-/* ------------------
-      FOOTER
-  ------------------ */
-@media (max-width:882px) {
-  #footer {
-    flex-direction: column;
-    gap: 5rem;
-    padding: 5rem 2rem;
-  }
-
-  #footer .left,
-  #footer .right {
-    width: 100%;
-  }
-
-  #footer .left ul {
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  #footer .left ul a {
-    font-size: 2rem;
-  }
-}
-
 #faq div p br {
   display: none;
 }
@@ -520,5 +494,46 @@
   #main_design ul h3 {
     font-size: 2.5rem;
     margin-top: 0;
+  }
+
+  /* ---- footer ---- */
+  #footer {
+    padding: 50px 24px;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  #footer .left,
+  #footer .right {
+    width: 100%;
+  }
+
+  #footer .left ul {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #footer .left ul a {
+    font-size: 2rem;
+  }
+
+  #footer .left p {
+    font-size: 1.3rem;
+    word-break: keep-all;
+    line-height: 1.7;
+  }
+
+  #footer .right ul {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  #footer .right ul span {
+    font-size: 1.3rem;
+  }
+
+  #footer .right ul p {
+    font-size: 1.5rem;
   }
 }

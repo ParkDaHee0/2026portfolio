@@ -1142,11 +1142,16 @@ body {
 /*footer*/
 /*footer*/
 #footer {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   padding: 90px 180px;
   background-color: #E24101;
-  gap: 5rem;
+}
+
+#footer .top_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #footer .right,
@@ -1171,18 +1176,10 @@ body {
   font-family: 'ProstoOne', serif;
 }
 
-#footer .left p {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-#footer .left p:nth-of-type(2) {
-  color: #ED8156;
-}
-
 #footer .right {
   width: 35%;
 }
+
 
 #footer .right ul {
   display: flex;
@@ -1202,6 +1199,15 @@ body {
   color: #Fff;
   font-size: 1.7rem;
   font-family: 'ProstoOne', serif;
+}
+
+#footer .copy p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#footer .copy p:nth-of-type(2) {
+  color: #ED8156;
 }
 
 
